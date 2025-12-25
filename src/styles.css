@@ -1,0 +1,45 @@
+/* Fonts */
+@font-face {
+  font-display: swap;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/fraunces-v38-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/fraunces-v38-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/barlow-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Custom Colors */
+:root {
+/* ----Primary---- */
+    --Red-400: hsl(7, 99%, 70%);
+    --Yellow-500: hsl(51, 100%, 49%);
+    --Green-800: (graphic design text): hsl(167, 40%, 24%);
+    --Blue-800: (photography text): hsl(198, 62%, 26%);
+    --Green-500: (footer): hsl(167, 34%, 41%);
+/* ----Neutral---- */
+    --Grey-950: hsl(212, 27%, 19%);
+    --Grey-600: hsl(213, 9%, 39%);
+    --Grey-550: hsl(232, 10%, 55%);
+    --Grey-400: hsl(210, 4%, 67%);
+    --White: hsl(0, 100%, 100%);
+}
+
+/* General Typography */
+body {  
+    font-size: 1.125rem;
+}
