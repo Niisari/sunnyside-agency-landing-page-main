@@ -57,6 +57,7 @@ button {
   background: none;
 }
 
+/* Mobile header Section */
 .hero {
   background-image: url("../images/mobile/image-header.jpg");
   background-size: cover;
@@ -67,7 +68,7 @@ button {
   position: relative;
   min-height: 100vh;
 }
-
+/* Navigation Section */
 .hero__logo--container {
   display: flex;
   justify-content: space-between;
@@ -128,7 +129,7 @@ button {
   padding: 1rem 2rem;
   border-radius: 2rem;
 }
-
+/* Hero Content Section */
 .hero__main--title {
   color: var(--White);
 
