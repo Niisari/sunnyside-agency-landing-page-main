@@ -273,3 +273,113 @@ button {
 .right__blue {
   color: var(--Blue-800);
 }
+
+.clients__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 4rem;
+  padding: 4rem 2rem;
+}
+
+.clients__testimonials {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4rem;
+}
+
+.clients__section--title {
+  color: var(--Grey-400);
+  font-size: 1rem;
+
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.clients__testimonials--client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.clients__testimonials--image {
+  width: 25%;
+  border-radius: 50%;
+}
+
+.clients__testimonials--image,
+.clients__testimonials--text {
+  margin-bottom: 2rem;
+}
+
+.clients__testimonials--text {
+  color: var(--Grey-550);
+  text-align: center;
+}
+
+.clients__testimonials--name {
+  color: var(--Grey-950);
+  margin-bottom: 0.5rem;
+}
+
+.clients__testimonials--role {
+  color: var(--Grey-400);
+  font-family: 'barlow';
+  font-weight: 600;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  "milk orange"
+  "cone sugar";
+}
+
+.milk__bottle {
+  grid-area: milk;
+}
+
+.orange__juice {
+  grid-area: orange;
+}
+
+.icecream__cone {
+  grid-area: cone;
+}
+
+.sugar__cubes {
+  grid-area: sugar;
+}
+
+.footer {
+  background-color: var(--Green-500);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 4rem;
+  padding: 4rem 2rem;
+}
+
+.footer__title {
+  color: var(--Green-800);
+}
+
+.footer__links {
+  display: flex;
+  gap: 4rem;
+}
+
+.footer__item a {
+  color: var(--Green-800);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 2rem;
+}
