@@ -13,41 +13,47 @@
 
   <div class="main__container">
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#">About</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">Services</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">Projects</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <header class="hero">
 
-    <div class="hero__main">
-      <h1 class="hero__main--title">We are creatives</h1>
-      <img 
-      class="hero__main--arrow" 
-      src="./images/icon-arrow-down.svg" 
-      alt="arrow">
-
-      <picture class="hero__main--image">
-        <source 
-        media="(min-width: 768px)" 
-        srcset="./images/desktop/image-header.jpg">
+      <div class="hero__logo--container">
         <img 
-        src="./images/mobile/image-header.jpg" 
-        alt="hero image">
-      </picture>
+        class="hero__logo" 
+        src="./images/logo.svg" 
+        alt="logo">
 
-    </div>
-  
+        <button class="nav__toggle--btn">
+          <img 
+          src="./images/icon-hamburger.svg" 
+          alt=""
+          >
+        </button>
+      </div>
+    
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Projects</a>
+          </li>
+          <li class="nav__item--contact">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h1 class="hero__main--title">We are creatives</h1>
+
+      <div class="hero__arrow--container">
+        <img src="./images/icon-arrow-down.svg" alt="">
+      </div>
+
+    </header>
+
     <section class="transform">
 
       <div class="transform__content--left">
@@ -245,6 +251,6 @@
  
   </div>
 
-  <script src=""></script>
+  <script src="./src/nav-toggle.js"></script>
 </body>
 </html>
