@@ -4,7 +4,7 @@
   font-family: 'Fraunces';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/fraunces-v38-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../assets/font/fraunces-v38-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
@@ -12,7 +12,7 @@
   font-family: 'Fraunces';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/fraunces-v38-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../assets/font/fraunces-v38-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
@@ -20,7 +20,7 @@
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/barlow-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../assets/font/barlow-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* Custom Colors */
@@ -43,3 +43,109 @@
 body {  
     font-size: 1.125rem;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces';
+  font-weight: 900;
+
+  line-height: 1;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hero {
+  background-image: url("../images/mobile/image-header.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero__logo--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.5rem 1rem;
+}
+
+.nav {
+  display: none;
+}
+
+.nav__open {
+    background-color: var(--White);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  margin: 0 auto;
+  width: 85%;
+
+  position: absolute;
+  top: 18%;
+  left: 0;
+  right: 0;
+  bottom: 23%;
+
+  z-index: 9999;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.nav__item a {
+  color: var(--Grey-550);
+  font-family: 'Barlow';
+  font-weight: 700;
+}
+
+.nav__item--contact {
+  margin-top: 1rem;
+}
+
+.nav__item--contact a {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--Green-800);
+  background-color: var(--Yellow-500);
+
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+.hero__main--title {
+  color: var(--White);
+
+  font-size: 3rem;
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+  text-align: center;
+  margin: 6rem auto;
+}
+
+.hero__arrow--container {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25%;
+}
+
