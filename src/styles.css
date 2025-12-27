@@ -144,7 +144,9 @@ picture {
   text-transform: uppercase;
   font-family: 'Fraunces';
   font-weight: 700;
-  color: var(--White);
+  color: var(--Grey-950);
+
+  background-color: var(--Yellow-500);
 
   padding: 1rem 2rem;
   border-radius: 2rem;
