@@ -153,6 +153,7 @@ picture {
   text-transform: uppercase;
   text-align: center;
 
+  position: relative;
   margin-top: 15vh;
 }
 
@@ -160,10 +161,10 @@ picture {
     display: flex;
     justify-content: center;
 
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
-    bottom: 25%;
+    bottom: -16vh;
 }
 
 .transform__content--left {
@@ -267,13 +268,6 @@ picture {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  min-height: 100svh;
-  padding: 4rem 2rem;
 }
 
 .graphic__photography--content {
@@ -293,18 +287,21 @@ picture {
   text-align: center;
 }
 
+.graphic__photography--left,
 .graphic__photography--right {
-  background-image: url("../images/mobile/image-photography.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 
   min-height: 100svh;
   padding: 4rem 2rem;
+}
+
+.graphic__photography--right {
+  background-image: url("../images/mobile/image-photography.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .right__blue {
@@ -427,6 +424,10 @@ picture {
     background-image: url("../images/desktop/image-header.jpg");
   }
 
+  .hero__main--title {
+    top: -6vh;
+  }
+
   .hero__logo--container {
     padding: 2rem 2rem;
   }
@@ -442,6 +443,10 @@ picture {
     justify-content: flex-end;
   }
 
+  .nav__item a {
+    color: var(--White);
+  }
+
   .nav__toggle--btn {
     display: none;
   }
@@ -452,6 +457,7 @@ picture {
 
   .contact a {
     background-color: var(--White);
+    color: var(--Grey-950);
     padding: 0.75rem 1.25rem;
   }
 
@@ -506,13 +512,8 @@ picture {
 }
 
 @media only screen and (min-width: 992px) {
-
-  .hero__arrow--container {
-    bottom: 39%;
-  }
-
   .hero__main--title {
-    margin-top: 5vh;
+    top: -9vh;
   }
 
   .transform__content--left,
@@ -552,6 +553,11 @@ picture {
     justify-content: space-between;
   }
 
+  .clients__testimonials--image,
+  .clients__testimonials--text {
+  margin-bottom: 4rem;
+}
+
   .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -560,14 +566,8 @@ picture {
   }
 }
 
-@media only screen and (min-width: 1500px) {
-  .hero__arrow--container {
-    bottom: 45%;
-  }
 
-  .hero__main--title {
-    margin-top: 8vh;
-  }
-}
+
+
 
 
