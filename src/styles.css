@@ -153,18 +153,20 @@ picture {
   text-transform: uppercase;
   text-align: center;
 
-  position: relative;
-  margin-top: 15vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25vh;
 }
 
 .hero__arrow--container {
     display: flex;
     justify-content: center;
 
-    position: relative;
+    position: absolute;
     left: 0;
     right: 0;
-    bottom: -16vh;
+    bottom: 25vh;
 }
 
 .transform__content--left {
@@ -424,10 +426,6 @@ picture {
     background-image: url("../images/desktop/image-header.jpg");
   }
 
-  .hero__main--title {
-    top: -6vh;
-  }
-
   .hero__logo--container {
     padding: 2rem 2rem;
   }
@@ -512,8 +510,19 @@ picture {
 }
 
 @media only screen and (min-width: 992px) {
+  .nav__list {
+    gap: 3rem;
+  }
+
   .hero__main--title {
-    top: -9vh;
+    font-size: 3.5rem;
+    letter-spacing: 10px;
+
+    top: 18vh;
+  }
+
+  .hero__arrow--container {
+   bottom: 47vh;
   }
 
   .transform__content--left,
@@ -565,7 +574,6 @@ picture {
     "milk orange cone sugar";
   }
 }
-
 
 
 
