@@ -71,7 +71,7 @@ picture {
 .hero {
   background-image: url("../images/mobile/image-header.jpg");
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
   overflow-x: hidden;
 
@@ -540,11 +540,11 @@ picture {
     font-size: 3.5rem;
     letter-spacing: 10px;
 
-    top: 18vh;
+    top: 21vh;
   }
 
   .hero__arrow--container {
-   bottom: 47vh;
+   bottom: 40vh;
   }
 
   .transform__content--left,
@@ -596,6 +596,11 @@ picture {
     "milk orange cone sugar";
   }
 }
+
+@media only screen and (min-width: 1200px) {
+
+}
+
 
 
 
