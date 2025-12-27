@@ -175,6 +175,25 @@ picture {
   padding: 4rem 2rem;
 }
 
+.grid__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.transform {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.transform__content--image {
+  background-image: url("../images/mobile/image-transform.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .transform__content--title {
   color: var(--Grey-950);
 
@@ -196,6 +215,19 @@ picture {
   font-weight: 900;
 
   box-shadow: 0 0.5rem 0.5rem -3px var(--Yellow-500);
+}
+
+.standout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.standout__content--image {
+  background-image: url("../images/mobile/image-stand-out.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .standout__content--right {
@@ -427,8 +459,40 @@ picture {
     bottom: 41%;
   }
 
+  .grid__container {
+    display: grid;
+    grid-template-areas: 
+    "transform-content transform-image"
+    "standout-image standout-content";
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .transform__content--image {
+    background-image: url("../images/desktop/image-transform.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    grid-area: transform-image;
+  }
+
   .transform__content--left {
-    
+    grid-area: transform-content;
+  }
+
+  .standout__content--right {
+    grid-area: standout-content;
+  }
+
+  .standout__content--image {
+    background-image: url("../images/desktop/image-stand-out.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    grid-area: standout-image;
   }
 
   .graphic__photography--left {
@@ -440,3 +504,70 @@ picture {
   }
 
 }
+
+@media only screen and (min-width: 992px) {
+
+  .hero__arrow--container {
+    bottom: 39%;
+  }
+
+  .hero__main--title {
+    margin-top: 5vh;
+  }
+
+  .transform__content--left,
+  .standout__content--right {
+    align-items: flex-start;
+    padding: 6rem;
+  }
+
+  .transform__content--text,
+  .standout__content--text {
+    text-align: left;
+  }
+
+  .graphic__photography--grid {
+    display: grid;
+    grid-template-areas: 
+    "left right";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .graphic__photography-left {
+    grid-area: left;
+  }
+
+  .graphic__photography-right {
+    grid-area: right;
+  }
+
+  .clients__section {
+    padding: 6rem;
+  }
+
+  .clients__testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "milk orange cone sugar";
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .hero__arrow--container {
+    bottom: 45%;
+  }
+
+  .hero__main--title {
+    margin-top: 8vh;
+  }
+}
+
+
