@@ -133,12 +133,18 @@ picture {
   margin-top: 1rem;
 }
 
+.contact a:hover,
+.contact a:focus {
+  transition: 0.3s ease-in-out;
+  color: var(--White);
+  background-color: lightskyblue;
+}
+
 .contact a {
   text-transform: uppercase;
   font-family: 'Fraunces';
   font-weight: 700;
-  color: var(--Grey-950);
-  background-color: var(--Yellow-500);
+  color: var(--White);
 
   padding: 1rem 2rem;
   border-radius: 2rem;
@@ -263,6 +269,13 @@ picture {
   font-weight: 900;
 
   box-shadow: 0 0.5rem 0.5rem -3px var(--Red-400);
+}
+
+.standout__content--btn:hover,
+.transform__content--btn:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: all 0.2s ease-in-out;
 }
 
 .graphic__photography--left {
@@ -415,11 +428,20 @@ picture {
   color: var(--Green-800);
 }
 
+.footer__item a:hover,
+.footer__item a:focus {
+  color: var(--White);
+}
+
 .footer__socials {
   display: flex;
   gap: 2rem;
 }
 
+.icon svg:hover,
+.icon svg:focus {
+  fill: var(--White);
+}
 
 @media only screen and (min-width: 750px) {
   .hero {
