@@ -63,6 +63,10 @@ button {
   background: none;
 }
 
+picture {
+  line-height: 0;
+}
+
 /* Mobile header Section */
 .hero {
   background-image: url("../images/mobile/image-header.jpg");
@@ -386,7 +390,7 @@ button {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 750px) {
   .hero {
     background-image: url("../images/desktop/image-header.jpg");
   }
@@ -423,12 +427,8 @@ button {
     bottom: 41%;
   }
 
-  .transform__content--right {
-    background-image: url("../images/desktop/image-transform.jpg");
-  }
-
-  .standout__content--left {
-    background-image: url("../images/desktop/image-stand-out.jpg");
+  .transform__content--left {
+    
   }
 
   .graphic__photography--left {
@@ -439,7 +439,4 @@ button {
     background-image: url("../images/desktop/image-photography.jpg");
   }
 
-  .milk__bottle {
-    background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
-  }
 }
