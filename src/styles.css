@@ -125,12 +125,13 @@ button {
   font-weight: 700;
 }
 
-.nav__item--contact {
+.contact {
   margin-top: 1rem;
 }
 
-.nav__item--contact a {
+.contact a {
   text-transform: uppercase;
+  font-family: 'Fraunces';
   font-weight: 700;
   color: var(--Grey-950);
   background-color: var(--Yellow-500);
@@ -382,4 +383,63 @@ button {
 .footer__socials {
   display: flex;
   gap: 2rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../images/desktop/image-header.jpg");
+  }
+
+  .hero__logo--container {
+    padding: 2rem 2rem;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .nav__toggle--btn {
+    display: none;
+  }
+
+  .contact {
+    margin: 0;
+  }
+
+  .contact a {
+    background-color: var(--White);
+    padding: 0.75rem 1.25rem;
+  }
+
+  .hero__arrow--container {
+    bottom: 41%;
+  }
+
+  .transform__content--right {
+    background-image: url("../images/desktop/image-transform.jpg");
+  }
+
+  .standout__content--left {
+    background-image: url("../images/desktop/image-stand-out.jpg");
+  }
+
+  .graphic__photography--left {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+  }
+
+  .graphic__photography--right {
+    background-image: url("../images/desktop/image-photography.jpg");
+  }
+
+  .milk__bottle {
+    background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+  }
 }
